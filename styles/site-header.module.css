@@ -1,0 +1,65 @@
+.navbar {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.navbar * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.navbarListItem {
+  display: inline-block;
+  list-style: none;
+  margin: 0.7rem 0;
+  padding: 0.7rem 1rem;
+}
+
+.navbarListItem a {
+  padding: 0.3em 0;
+  color: var(--secondary-text-color);
+  position: relative;
+  text-decoration: none;
+}
+
+.navbarListItem a:before,
+.navbarListItem a:after {
+  height: 3px;
+  position: absolute;
+  content: "";
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: var(--secondary-bg-color);
+  width: 0;
+}
+
+.navbarListItem a:before {
+  top: 0;
+  right: 0;
+}
+
+.navbarListItem a:after {
+  bottom: 0;
+  left: 0;
+}
+
+.navbarListItem a:hover,
+.navbarListItem a.nuxt-link-exact-active {
+  color: var(--main-text-color);
+}
+
+.navbarListItem a:hover:before,
+.navbarListItem a:hover:after,
+.navbarListItem a.nuxt-link-exact-active:before,
+.navbarListItem a.nuxt-link-exact-active:after {
+  width: 100%;
+}
+
+.navbarList {
+  margin: 0;
+  padding: 0;
+}
