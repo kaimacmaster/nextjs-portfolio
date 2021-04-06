@@ -11,7 +11,7 @@ const SiteHeader = ({ links }) => {
   const listItems = linkList.map(({ name, href }) => (
     <li className={styles.navbarListItem} key={name.toLowerCase()}>
       <Link href={href}>
-        <a style={{color: "#ffffff"}}>{name}</a>
+        <a style={{color: "#a8a8a8"}}>{name}</a>
       </Link>
     </li>
   ));
