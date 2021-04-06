@@ -1,1 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Required environment variables:
+```
+CONTENTFUL_ACCESS_TOKEN=
+CONTENTFUL_PREVIEW_ACCESS_TOKEN=
+CONTENTFUL_SPACE_ID=
+```

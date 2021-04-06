@@ -5,7 +5,7 @@ const SiteHeader = ({ links }) => {
   const linkList = links || [
     { name: "Home", href: "/" },
     { name: "Experience", href: "/experience" },
-    { name: "Blog", href: "/blog" },
+    /* { name: "Blog", href: "/blog" }, */
   ];
 
   const listItems = linkList.map(({ name, href }) => (
