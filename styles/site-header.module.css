@@ -26,6 +26,11 @@
   text-decoration: none;
 }
 
+.navbarListItem a:hover,
+.navbarListItem a.active {
+  color: var(--main-text-color);
+}
+
 .navbarListItem a:before,
 .navbarListItem a:after {
   height: 3px;
@@ -47,15 +52,10 @@
   left: 0;
 }
 
-.navbarListItem a:hover,
-.navbarListItem a.nuxt-link-exact-active {
-  color: var(--main-text-color);
-}
-
 .navbarListItem a:hover:before,
 .navbarListItem a:hover:after,
-.navbarListItem a.nuxt-link-exact-active:before,
-.navbarListItem a.nuxt-link-exact-active:after {
+.navbarListItem a.active:before,
+.navbarListItem a.active:after {
   width: 100%;
 }
 

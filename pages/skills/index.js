@@ -2,11 +2,11 @@ import Head from "next/head";
 import Layout, { siteTitle } from "@/components/layout";
 import utilStyles from "@/styles/utils.module.css";
 
-export default function Home() {
+export default function Skills() {
   return (
-    <Layout home>
+    <Layout>
       <Head>
-        <title>{siteTitle} | Portfolio</title>
+        <title>{siteTitle} | Skills</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
