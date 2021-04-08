@@ -1,0 +1,14 @@
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillListItem {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.skillListIcon {
+  max-width: 2rem;
+}

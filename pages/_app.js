@@ -1,5 +1,5 @@
-import "../styles/global.css";
-import SiteHeader from "../components/site-header";
+import "@/styles/global.css";
+import SiteHeader from "@/components/site-header";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
       <main id="main">
         <Component {...pageProps} />
       </main>
-      <footer id="footer"></footer>
+      <footer id="footer" />
     </div>
   );
 }

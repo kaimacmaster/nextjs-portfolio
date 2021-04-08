@@ -34,8 +34,8 @@ export default function Experience({ items, preview }) {
 }
 
 export async function getStaticProps({ preview = false }) {
-  const items = (await getAllExperienceItems(preview)) ?? []
+  const items = (await getAllExperienceItems(preview)) ?? [];
   return {
-    props: { preview, items },
-  }
+    props: { items, preview },
+  };
 }

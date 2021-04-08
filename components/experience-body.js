@@ -11,14 +11,15 @@ const ExperienceItem = ({
   leaveDate,
 }) => (
   <>
-    <Link href={`/experience/${slug}`}>
-      <a className={utilStyles.headingLg}>{companyName}</a>
-    </Link>
-    <br />
+    <h3 className={utilStyles.headingMd}>{companyName}</h3>
     <span className={utilStyles.lightText}>{jobTitle}</span>
     <p>{description}</p>
     <small className={utilStyles.lightText}>
       <TimeActive startDate={startDate} leaveDate={leaveDate} />
+      <br />
+      <Link href={`/experience/${slug}`}>
+        <a>Read More</a>
+      </Link>
     </small>
   </>
 );
