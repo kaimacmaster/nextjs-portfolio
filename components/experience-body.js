@@ -11,7 +11,7 @@ const ExperienceItem = ({
   leaveDate,
 }) => (
   <>
-    <h3 className={utilStyles.headingMd}>{companyName}</h3>
+    <h3 style={{ marginBottom: 0 }}>{companyName}</h3>
     <span className={utilStyles.lightText}>{jobTitle}</span>
     <p>{description}</p>
     <small className={utilStyles.lightText}>
