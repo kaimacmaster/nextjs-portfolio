@@ -1,6 +1,7 @@
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import utilStyles from "@/styles/utils.module.css";
+import styles from "@/components/experience-body.module.css";
 
 const ExperienceItem = ({
   companyName,
@@ -11,7 +12,7 @@ const ExperienceItem = ({
   leaveDate,
 }) => (
   <>
-    <h3 style={{ marginBottom: 0 }}>{companyName}</h3>
+    <h3 className={styles.title}>{companyName}</h3>
     <span className={utilStyles.lightText}>{jobTitle}</span>
     <p>{description}</p>
     <small className={utilStyles.lightText}>
@@ -24,7 +25,7 @@ const ExperienceItem = ({
   </>
 );
 
-const DateTime = dynamic(() => import("../components/date"));
+const DateTime = dynamic(() => import("./functional/date"));
 
 const TimeActive = ({ startDate, leaveDate }) => {
   const present = <span>Present</span>;

@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { getAllExperienceSlugs, getAllWorkItems } from "@/lib/contentful";
 
-import Layout, { siteTitle } from "@/components/layout";
+import Layout, { siteTitle } from "@/components/layout/layout";
 import WorkItem from "@/components/work-item";
 
 export default function Work({ work, companyName }) {

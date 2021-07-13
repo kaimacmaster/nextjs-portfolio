@@ -1,5 +1,5 @@
 import "@/styles/global.css";
-import SiteHeader from "@/components/site-header";
+import SiteHeader from "@/components/layout/site-header";
 
 export default function App({ Component, pageProps }) {
   return (
