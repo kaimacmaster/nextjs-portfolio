@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "@/components/layout/layout";
+import Layout from "@/components/common/Layout";
+import { siteTitle } from "@/lib/constants";
 import SkillsList from "@/components/skills-list";
 import utilStyles from "@/styles/utils.module.css";
 import {
