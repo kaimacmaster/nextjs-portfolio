@@ -12,7 +12,7 @@ export default function Blog({ allPostsData }) {
         <title>{siteTitle} | Blog</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Stay up to date with what I'm up to.</p>
+        <p>Stay up to date with what I&apos;m up to.</p>
       </section>
       {allPostsData && (
         <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

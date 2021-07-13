@@ -36,8 +36,8 @@ export default function Work({ work, companyName }) {
           ))
         ) : (
           <p>
-            No work found for this company, I like coding but I'm not so good at
-            updating contentful.
+            No work found for this company, I like coding but I&apos;m not so
+            good at updating contentful.
           </p>
         )}
       </div>
