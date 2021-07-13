@@ -8,7 +8,7 @@ const SiteHeader = ({ links }) => {
   const linkList = links || [
     { name: "Home", href: "/" },
     { name: "Experience", href: "/experience" },
-    { name: "Skills", href: "/skills" },
+    /* { name: "Skills", href: "/skills" }, */
     /* { name: "Blog", href: "/blog" }, */
   ];
 
