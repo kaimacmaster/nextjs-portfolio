@@ -1,4 +1,4 @@
-import styles from "@/components/site-header.module.css";
+import styles from "./site-header.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -8,7 +8,7 @@ const SiteHeader = ({ links }) => {
   const linkList = links || [
     { name: "Home", href: "/" },
     { name: "Experience", href: "/experience" },
-    { name: "Skills", href: "/skills" },
+    /* { name: "Skills", href: "/skills" }, */
     /* { name: "Blog", href: "/blog" }, */
   ];
 
