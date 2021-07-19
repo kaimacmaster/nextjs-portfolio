@@ -1,15 +1,20 @@
-import styles from "./site-header.module.css";
+import { FunctionComponent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const SiteHeader = ({ links }) => {
+import styles from "./NavBar.module.css";
+
+type Link = {
+  name: string;
+  href: string;
+};
+
+const NavBar: FunctionComponent = () => {
   const router = useRouter();
 
-  const linkList = links || [
+  const linkList: Link[] = [
     { name: "Home", href: "/" },
     { name: "Experience", href: "/experience" },
-    /* { name: "Skills", href: "/skills" }, */
-    /* { name: "Blog", href: "/blog" }, */
   ];
 
   const listItems = linkList.map(({ name, href }) => (
@@ -29,4 +34,4 @@ const SiteHeader = ({ links }) => {
   );
 };
 
-export default SiteHeader;
+export default NavBar;

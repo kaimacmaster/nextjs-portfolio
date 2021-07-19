@@ -1,7 +1,7 @@
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import utilStyles from "@/styles/utils.module.css";
 import styles from "@/components/experience-body.module.css";
+import TimeActive from "@/components/ui/TimeActive";
 
 const ExperienceItem = ({
   companyName,
@@ -24,25 +24,5 @@ const ExperienceItem = ({
     </small>
   </>
 );
-
-const DateTime = dynamic(() => import("./functional/date"));
-
-const TimeActive = ({ startDate, leaveDate }) => {
-  const present = <span>Present</span>;
-  if (!startDate) {
-    return present;
-  }
-
-  const sdString = startDate && new Date(startDate).toISOString();
-  const ldString = leaveDate && new Date(leaveDate).toISOString();
-
-  return (
-    <>
-      <DateTime dateString={sdString} />
-      {" - "}
-      {(ldString && <DateTime dateString={ldString} />) || present}
-    </>
-  );
-};
 
 export default ExperienceItem;
