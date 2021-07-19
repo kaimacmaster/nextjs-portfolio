@@ -3,7 +3,7 @@ import styles from "./BackLink.module.css";
 import Link from "@/components/ui/Link";
 
 interface Props {
-  backlink: string;
+  backlink?: string;
 }
 
 const BackLink: FunctionComponent<Props> = ({ backlink }) => {
