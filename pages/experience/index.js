@@ -5,7 +5,7 @@ import utilStyles from "@/styles/utils.module.css";
 import { getAllExperienceItems } from "@/lib/contentful";
 import dynamic from "next/dynamic";
 
-const ExperienceBody = dynamic(() => import("@/components/experience-body"));
+const SummaryCard = dynamic(() => import("@/components/experience/SummaryCard"));
 
 export default function Experience({ items, preview }) {
   return (
@@ -18,7 +18,7 @@ export default function Experience({ items, preview }) {
         <ul className={utilStyles.list}>
           {items.map((item) => (
             <li className={utilStyles.listItem} key={item.sys.id}>
-              <ExperienceBody
+              <SummaryCard
                 companyName={item.companyName}
                 jobTitle={item.jobTitle}
                 description={item.description}

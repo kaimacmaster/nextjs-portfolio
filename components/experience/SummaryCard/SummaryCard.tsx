@@ -1,9 +1,19 @@
+import { FunctionComponent } from "react";
 import Link from "next/link";
 import utilStyles from "@/styles/utils.module.css";
-import styles from "@/components/experience-body.module.css";
+import styles from "./SummaryCard.module.css";
 import TimeActive from "@/components/ui/TimeActive";
 
-const ExperienceItem = ({
+interface Props {
+  companyName: string;
+  jobTitle: string;
+  description: string;
+  slug: string;
+  startDate: string;
+  leaveDate: string;
+}
+
+const SummaryCard: FunctionComponent<Props> = ({
   companyName,
   jobTitle,
   description,
@@ -25,4 +35,4 @@ const ExperienceItem = ({
   </>
 );
 
-export default ExperienceItem;
+export default SummaryCard;
