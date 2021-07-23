@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
 import { getAllExperienceSlugs, getAllWorkItems } from "@/lib/contentful";
 
 import Layout from "@/components/common/Layout";
