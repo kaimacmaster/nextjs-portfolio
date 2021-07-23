@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "@/components/common/Layout";
 import { siteTitle } from "@/lib/constants";
-import SkillsList from "@/components/skills-list";
+import SkillsList from "@/components/skills/SkillsList";
 import utilStyles from "@/styles/utils.module.css";
 import {
   faAws,

@@ -1,7 +1,13 @@
-import styles from "@/components/skills-list.module.css";
+import { FunctionComponent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Icon } from "@fortawesome/fontawesome-svg-core";
+import styles from "./SkillsList.module.css";
 
-const SkillsList = ({ faIcons }) => {
+interface Props {
+  faIcons: Array<Icon>;
+}
+
+const SkillsList: FunctionComponent<Props> = ({ faIcons }) => {
   return (
     <ul className={styles.skillList}>
       {faIcons.map((icon) => (
