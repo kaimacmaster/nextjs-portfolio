@@ -4,7 +4,8 @@ import { getAllExperienceSlugs, getAllWorkItems } from "@/lib/contentful";
 
 import Layout from "@/components/common/Layout";
 import { siteTitle } from "@/lib/constants";
-import WorkItem from "@/components/work-item";
+
+const DetailsCard = dynamic(() => import("@/components/experience/DetailsCard"));
 
 export default function Work({ work, companyName }) {
   const router = useRouter();
@@ -28,7 +29,7 @@ export default function Work({ work, companyName }) {
         <h1>{companyName}</h1>
         {work.length ? (
           work.map((item) => (
-            <WorkItem
+            <DetailsCard
               key={item.sys.id}
               title={item.title}
               content={item.content.json}

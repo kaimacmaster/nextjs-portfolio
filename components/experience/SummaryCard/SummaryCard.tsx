@@ -1,8 +1,9 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
+import TimeActive from "@/components/ui/TimeActive";
+
 import utilStyles from "@/styles/utils.module.css";
 import styles from "./SummaryCard.module.css";
-import TimeActive from "@/components/ui/TimeActive";
 
 interface Props {
   companyName: string;
@@ -21,7 +22,7 @@ const SummaryCard: FunctionComponent<Props> = ({
   startDate,
   leaveDate,
 }) => (
-  <>
+  <article>
     <h3 className={styles.title}>{companyName}</h3>
     <span className={utilStyles.lightText}>{jobTitle}</span>
     <p>{description}</p>
@@ -32,7 +33,7 @@ const SummaryCard: FunctionComponent<Props> = ({
         <a>Read More</a>
       </Link>
     </small>
-  </>
+  </article>
 );
 
 export default SummaryCard;
