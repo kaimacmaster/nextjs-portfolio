@@ -12,7 +12,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>
           Hello, I&apos;m <strong>Kai</strong>. I&apos;m a full-stack web
-          developer specialising in front-end development with over nine years
+          developer specialising in front-end development with over 9 years
           working in industry.
         </p>
         <p>
