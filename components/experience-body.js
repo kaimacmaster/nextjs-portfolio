@@ -14,13 +14,9 @@ const ExperienceItem = ({
   <>
     <h3 className={styles.title}>{companyName}</h3>
     <span className={utilStyles.lightText}>{jobTitle}</span>
-    <p>{description}</p>
+    <p className={styles.pre}>{description}</p>
     <small className={utilStyles.lightText}>
       <TimeActive startDate={startDate} leaveDate={leaveDate} />
-      <br />
-      <Link href={`/experience/${slug}`}>
-        <a>Read More</a>
-      </Link>
     </small>
   </>
 );

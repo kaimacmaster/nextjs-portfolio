@@ -1,3 +1,8 @@
 .title {
   margin-bottom: 0;
 }
+
+.pre {
+  white-space: pre-wrap;
+  line-height: 1.4rem;
+}
